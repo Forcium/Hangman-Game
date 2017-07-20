@@ -35,10 +35,11 @@ p {
 }
 
 #spaces {
-  margin: 10% auto;
+  margin-bottom: 20%;
   color: white;
   text-align: center;
   font-size: 50px;
+  max-width: 100%;
 }
 
 .letterContainer {

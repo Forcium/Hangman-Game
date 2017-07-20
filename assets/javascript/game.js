@@ -2,8 +2,8 @@
   var red = ["r","e","d"];
   var blue = ["b","l","u","e"]
   var black = ["b","l","a","c","k"]
-  var orange = ["o","r","a","n","g","e"]
-  var word = [red, blue, black, orange];
+  var pink = ["p","i","n","k"]
+  var word = [red, blue, black, pink];
   var randomWord;
   var spaces = "_";
   var keyInput;
@@ -39,8 +39,8 @@
       console.log (keyInput+"!");
       document.getElementsByClassName("letter")[j].style.visibility = "visible";
       x = true;
-      correctAnswers += 1;
-      console.log('correctAnswer: '+correctAnswers);
+      //
+      // console.log('correctAnswer: '+correctAnswers);
 
       for (var i = 0; i < correctInput.length; i++) {
         if (keyInput == correctInput[i]) {
@@ -50,10 +50,11 @@
       }
         if (duplicateCorrect == false) {
           correctInput.push(keyInput);
+          correctAnswers += 1;
+          console.log (correctInput);
         }
       duplicateCorrect = false;
     }
-
   }
 // otherwise follows through with guessLeft counter deduction -1
   if (x == false){
@@ -85,9 +86,10 @@
           guessLeft = 15;
           wrongInput = [];
           correctAnswers = 0;
+          correctInput = []
           document.querySelector("#incorrectInput").innerHTML = "";
           for (var j = 0; j < randomWord.length; j++) {
-            document.getElementById("spaces").innerHTML += "<div class='letterContainer'><div class='letter'>"+randomWord[j]+"</div></div>";
+          document.getElementById("spaces").innerHTML += "<div class='letterContainer'><div class='letter'>"+randomWord[j]+"</div></div>";
           }
         }, 1);
 
@@ -103,12 +105,11 @@
           guessLeft = 15;
           wrongInput = [];
           correctAnswers = 0;
+          correctInput = []
           document.querySelector("#incorrectInput").innerHTML = "";
           for (var j = 0; j < randomWord.length; j++) {
             document.getElementById("spaces").innerHTML += "<div class='letterContainer'><div class='letter'>"+randomWord[j]+"</div></div>";
           }
         }, 1);
-
-
       }
 }
