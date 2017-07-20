@@ -26,7 +26,7 @@
 // will iterating through randomWord and turning into spaces on html
     document.getElementById("spaces").innerHTML += "<div class='letterContainer'><div class='letter'>"+randomWord[j]+"</div></div>";
   }
-    console.log(randomWord);
+    
 
 // user inputs a letter
     document.onkeyup = function(event) {
