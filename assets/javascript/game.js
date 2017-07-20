@@ -1,9 +1,9 @@
 // variables
   var red = ["r","e","d"];
   var blue = ["b","l","u","e"]
-  var green = ["g","r","e","e","n"]
-  var yellow = ["y","e","l","l","o","w"]
-  var word = [red, blue, green, yellow];
+  var black = ["b","l","a","c","k"]
+  var orange = ["o","r","a","n","g","e"]
+  var word = [red, blue, black, orange];
   var randomWord;
   var spaces = "_";
   var keyInput;
