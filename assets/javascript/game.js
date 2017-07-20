@@ -15,6 +15,7 @@
   var alreadyGuessed;
   var x = false;
   var correctAnswers = 0;
+  var wins = 0;
 
 
 
@@ -51,6 +52,7 @@
         if (duplicateCorrect == false) {
           correctInput.push(keyInput);
           correctAnswers += 1;
+
           console.log (correctInput);
         }
       duplicateCorrect = false;
@@ -102,6 +104,8 @@
           randomWord = word[Math.floor(Math.random() * word.length)];
           document.getElementById("spaces").innerHTML = "";
           document.getElementById("guessCounter").innerHTML = "15";
+          wins += 1;
+          document.querySelector("#win").innerHTML = wins;
           guessLeft = 15;
           wrongInput = [];
           correctAnswers = 0;

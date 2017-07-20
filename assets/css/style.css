@@ -17,7 +17,7 @@ h1, h2 {
 }
 
 p {
-  margin-top: 2%;
+  margin-top: 5px;
   color: #75FF70;
   text-align: center;
   font-size: 30px;
@@ -55,7 +55,7 @@ p {
 }
 
 #incorrectInput {
-  margin-top: 2%;
+  margin-top: 5px;
   color: #75FF70;
   text-align: center;
   font-size: 30px;
@@ -63,9 +63,24 @@ p {
 }
 
 #guessCounter {
-  margin-top: 2%;
+  margin-top: 5px;
   color: #75FF70;
   text-align: center;
   font-size: 30px;
   padding: 15px;
+}
+
+.yellow {
+  margin: 0 auto;
+  color: #F8FF09;
+  text-align: center;
+  font-size: 35px;
+  padding: 10px;
+}
+#win {
+  margin: 0 auto;
+  color: #F8FF09;
+  text-align: center;
+  font-size: 35px;
+  padding: 10px;
 }
