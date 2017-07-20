@@ -1,0 +1,70 @@
+*  {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+body {
+  min-height:100%;
+  position:relative;
+  background: url("../images/darkblue.jpg");
+}
+
+h1, h2 {
+  color: white;
+  text-align: center;
+}
+
+p {
+  margin-top: 2%;
+  color: #75FF70;
+  text-align: center;
+  font-size: 30px;
+  padding: 15px;
+  max-width: 100%;
+}
+
+.page-header {
+  text-align: center;
+}
+
+.img-responsive {
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+
+#spaces {
+  margin: 10% auto;
+  color: white;
+  text-align: center;
+  font-size: 50px;
+}
+
+.letterContainer {
+  width: 50px;
+  display: inline-block;
+  padding: 15px;
+  border-bottom: 1px solid white;
+  margin: auto 5px;
+}
+
+.letter {
+  visibility: hidden;
+}
+
+#incorrectInput {
+  margin-top: 2%;
+  color: #75FF70;
+  text-align: center;
+  font-size: 30px;
+  padding: 15px;
+}
+
+#guessCounter {
+  margin-top: 2%;
+  color: #75FF70;
+  text-align: center;
+  font-size: 30px;
+  padding: 15px;
+}
